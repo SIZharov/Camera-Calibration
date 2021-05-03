@@ -12,7 +12,7 @@ This repository contains a program that determines the position of the ArUco-mar
 ## How to run
 ### Calibration:
 Afret you build the project:
-`$ ./cam_calib path/to/your/pattern/photo_1.jpg path/to/your/pattern/photo_2.jpg ...`
+`$ ./cam_calib path/to/pattern/photo_1.jpg path/to/pattern/photo_2.jpg ...`
  
 Notise! This code calibrates systems with only 2 cameras. You have to take photos and name them as in this [opencv guide](https://docs.opencv.org/master/d2/d1c/tutorial_multi_camera_main.html). Write PATTERNWIDTH and PATTERNHAIGHT in main.cpp file, to set physical width and height of your pattern. Intrinsic camera matrix and distortion coefficients will be stored in "im_storage/CalibParams".
 ### Pose estimation:
